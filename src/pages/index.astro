@@ -24,7 +24,7 @@ import SwiperInit from "../components/SwiperInit.astro";
 <body class="bg-gray-50 text-gray-800">
 
 <!-- ✅ HEADER -->
-<header id="mainHeader" class="fixed top-0 w-full bg-gradient-to-r from-green-100 to-white backdrop-blur-md border-b border-gray-200 shadow-sm z-50 transition-transform duration-300">
+<header id="mainHeader" class="fixed top-0 w-full bg-gradient-to-r from-blue-100 to-white backdrop-blur-md border-b border-gray-200 shadow-sm z-50 transition-transform duration-300">
   <div class="max-w-7xl mx-auto flex justify-between items-center px-4 sm:px-6 py-3 sm:py-4">
     
     <!-- ✅ Logo -->
@@ -35,19 +35,19 @@ import SwiperInit from "../components/SwiperInit.astro";
 
     <!-- ✅ Navigation -->
   <nav class="hidden md:flex space-x-6 lg:space-x-8 text-gray-700 text-base lg:text-lg font-medium">
-  <a href="#home" class="hover:text-green-700 transition border-b-2 border-transparent hover:border-green-700">Home</a>
-  <a href="#about" class="hover:text-green-700 transition border-b-2 border-transparent hover:border-green-700">Über uns</a>
-  <a href="#faq" class="hover:text-green-700 transition border-b-2 border-transparent hover:border-green-700">FAQ</a>
+  <a href="#home" class="hover:text-blue-700 transition border-b-2 border-transparent hover:border-blue-700">Home</a>
+  <a href="#about" class="hover:text-blue-700 transition border-b-2 border-transparent hover:border-blue-700">Über uns</a>
+  <a href="#faq" class="hover:text-blue-700 transition border-b-2 border-transparent hover:border-blue-700">FAQ</a>
 </nav>
 
     <!-- ✅ CTA Desktop -->
     <a href="#" 
-       class="hidden md:inline-block bg-green-600 text-white px-4 lg:px-5 py-2 rounded-lg font-semibold hover:bg-green-700 shadow-md hover:shadow-lg transition text-sm lg:text-base">
+       class="hidden md:inline-block bg-blue-600 text-white px-4 lg:px-5 py-2 rounded-lg font-semibold hover:bg-blue-700 shadow-md hover:shadow-lg transition text-sm lg:text-base">
        Exposé anfordern
     </a>
 
     <!-- ✅ Mobile Burger -->
-    <button id="burgerBtn" class="md:hidden p-2 text-gray-700 hover:text-green-600 focus:outline-none">
+    <button id="burgerBtn" class="md:hidden p-2 text-gray-700 hover:text-blue-600 focus:outline-none">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
       </svg>
@@ -57,11 +57,11 @@ import SwiperInit from "../components/SwiperInit.astro";
   <!-- ✅ Mobile Menu -->
   <div id="mobileMenu" class="hidden absolute top-full left-0 w-full bg-white shadow-lg border-t border-gray-200 z-50 transform transition-all duration-300 ease-in-out">
     <nav class="flex flex-col items-center py-6 space-y-4 text-gray-700 text-lg font-medium">
-      <a href="#home" class="hover:text-green-600 transition mobile-link">Home</a>
-      <a href="#about" class="hover:text-green-600 transition mobile-link">Über uns</a>
-      <a href="#faq" class="hover:text-green-600 transition mobile-link">FAQ</a>
+      <a href="#home" class="hover:text-blue-600 transition mobile-link">Home</a>
+      <a href="#about" class="hover:text-blue-600 transition mobile-link">Über uns</a>
+      <a href="#faq" class="hover:text-blue-600 transition mobile-link">FAQ</a>
       <a href="#" 
-         class="bg-green-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-green-700 transition">
+         class="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition">
         Exposé anfordern
       </a>
     </nav>
@@ -70,6 +70,7 @@ import SwiperInit from "../components/SwiperInit.astro";
 
 
 <div id="menuOverlay" class="hidden fixed inset-0 bg-black bg-opacity-40 z-40"></div>
+
 
 <!-- ✅ HERO -->
 <section id="home" class="relative h-[70vh] md:h-screen flex flex-col justify-center items-center text-center bg-gradient-to-br from-green-100 via-white to-green-50 overflow-hidden">

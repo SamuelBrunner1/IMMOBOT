@@ -11,7 +11,7 @@ import "../styles/global.css";
 <body class="bg-white text-gray-900 flex flex-col min-h-screen">
 
 <!-- ✅ HEADER -->
-<header id="mainHeader" class="fixed top-0 w-full bg-gradient-to-r from-green-100 to-white backdrop-blur-md border-b border-gray-200 shadow-sm z-50 transition-transform duration-300">
+<header id="mainHeader" class="fixed top-0 w-full bg-gradient-to-r from-blue-100 to-white backdrop-blur-md border-b border-gray-200 shadow-sm z-50 transition-transform duration-300">
   <div class="max-w-7xl mx-auto flex justify-between items-center px-4 sm:px-6 py-3 sm:py-4">
     
     <!-- ✅ Logo -->
@@ -22,19 +22,19 @@ import "../styles/global.css";
 
     <!-- ✅ Navigation -->
     <nav class="hidden md:flex space-x-6 lg:space-x-8 text-gray-700 text-base lg:text-lg font-medium">
-      <a href="/" class="hover:text-green-700 transition border-b-2 border-transparent hover:border-green-700">Home</a>
-      <a href="/#about" class="hover:text-green-700 transition border-b-2 border-transparent hover:border-green-700">Über uns</a>
-      <a href="/#faq" class="hover:text-green-700 transition border-b-2 border-transparent hover:border-green-700">FAQ</a>
+      <a href="/" class="hover:text-blue-700 transition border-b-2 border-transparent hover:border-blue-700">Home</a>
+      <a href="/#about" class="hover:text-blue-700 transition border-b-2 border-transparent hover:border-blue-700">Über uns</a>
+      <a href="/#faq" class="hover:text-blue-700 transition border-b-2 border-transparent hover:border-blue-700">FAQ</a>
     </nav>
 
     <!-- ✅ CTA Desktop -->
     <a href="#" 
-       class="hidden md:inline-block bg-green-600 text-white px-4 lg:px-5 py-2 rounded-lg font-semibold hover:bg-green-700 shadow-md hover:shadow-lg transition text-sm lg:text-base">
+       class="hidden md:inline-block bg-blue-600 text-white px-4 lg:px-5 py-2 rounded-lg font-semibold hover:bg-blue-700 shadow-md hover:shadow-lg transition text-sm lg:text-base">
        Exposé anfordern
     </a>
 
     <!-- ✅ Mobile Burger -->
-    <button id="burgerBtn" class="md:hidden p-2 text-gray-700 hover:text-green-600 focus:outline-none">
+    <button id="burgerBtn" class="md:hidden p-2 text-gray-700 hover:text-blue-600 focus:outline-none">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
       </svg>
@@ -44,11 +44,11 @@ import "../styles/global.css";
   <!-- ✅ Mobile Menu -->
   <div id="mobileMenu" class="hidden absolute top-full left-0 w-full bg-white shadow-lg border-t border-gray-200 z-50 transform transition-all duration-300 ease-in-out">
     <nav class="flex flex-col items-center py-6 space-y-4 text-gray-700 text-lg font-medium">
-      <a href="/" class="hover:text-green-600 transition mobile-link">Home</a>
-      <a href="/#about" class="hover:text-green-600 transition mobile-link">Über uns</a>
-      <a href="/#faq" class="hover:text-green-600 transition mobile-link">FAQ</a>
+      <a href="/" class="hover:text-blue-600 transition mobile-link">Home</a>
+      <a href="/#about" class="hover:text-blue-600 transition mobile-link">Über uns</a>
+      <a href="/#faq" class="hover:text-blue-600 transition mobile-link">FAQ</a>
       <a href="#" 
-         class="bg-green-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-green-700 transition">
+         class="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition">
         Exposé anfordern
       </a>
     </nav>
@@ -70,8 +70,8 @@ import "../styles/global.css";
   <p class="text-lg leading-8 mb-16">
     <strong>ImmoBot Demo GmbH</strong><br>
     Musterstraße 12, 10115 Berlin<br><br>
-    E-Mail: <a href="mailto:info@immobot.de" class="text-green-700 hover:underline">info@immobot.de</a><br>
-    Tel.: <a href="tel:+49301234567" class="text-green-700 hover:underline">+49 30 123 4567</a><br>
+    E-Mail: <a href="mailto:info@immobot.de" class="text-blue-700 hover:underline">info@immobot.de</a><br>
+    Tel.: <a href="tel:+49301234567" class="text-blue-700 hover:underline">+49 30 123 4567</a><br>
     Umsatzsteuer-ID: DE123456789<br>
     Handelsregister: HRB 123456, Amtsgericht Berlin<br>
     Vertreten durch: Max Mustermann<br><br>
@@ -114,20 +114,20 @@ import "../styles/global.css";
     <div>
       <h3 class="font-semibold text-gray-800 mb-3">Rechtliches</h3>
       <ul>
-        <li><a href="/rechtliches" class="hover:text-green-700">Rechtliche Hinweise</a></li>
+        <li><a href="/rechtliches" class="hover:text-blue-700">Rechtliche Hinweise</a></li>
       </ul>
     </div>
     
     <!-- Kontakt -->
     <div>
       <h3 class="font-semibold text-gray-800 mb-3">Kontakt</h3>
-      <p>E-Mail: <a href="mailto:info@immobot.de" class="hover:text-green-700">info@immobot.de</a></p>
+      <p>E-Mail: <a href="mailto:info@immobot.de" class="hover:text-blue-700">info@immobot.de</a></p>
       <p>Tel.: +49 30 123 4567</p>
     </div>
     
   <div>
   <h3 class="font-semibold text-gray-800 mb-3">Service</h3>
-  <a href="#" class="font-semibold text-gray-800 hover:text-green-700">
+  <a href="#" class="font-semibold text-gray-800 hover:text-blue-700">
     Immobilien ansehen
   </a>
 </div>

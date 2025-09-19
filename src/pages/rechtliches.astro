@@ -2,10 +2,10 @@
 import "../styles/global.css";
 ---
 
-<html lang="hu" style="color-scheme: light;">
+<html lang="de" style="color-scheme: light;">
 <head>
   <meta charset="UTF-8">
-  <title>Jogi információk - BioKosár</title>
+  <title>Rechtliche Hinweise - ImmoBot</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
 </head>
 <body class="bg-white text-gray-900 flex flex-col min-h-screen">
@@ -16,21 +16,21 @@ import "../styles/global.css";
     
     <!-- ✅ Logo -->
     <a href="/" class="flex items-center gap-3">
-      <img src="/NAPRA_BILD.jpg" alt="BioKosár Logo" class="h-10 sm:h-12 w-auto object-contain">
-      <span class="text-xl sm:text-2xl font-bold text-gray-900">BioKosár</span>
+      <img src="/NAPRA_BILD.jpg" alt="ImmoBot Logo" class="h-10 sm:h-12 w-auto object-contain">
+      <span class="text-xl sm:text-2xl font-bold text-gray-900">ImmoBot</span>
     </a>
 
     <!-- ✅ Navigation -->
     <nav class="hidden md:flex space-x-6 lg:space-x-8 text-gray-700 text-base lg:text-lg font-medium">
       <a href="/" class="hover:text-green-700 transition border-b-2 border-transparent hover:border-green-700">Home</a>
-      <a href="/#about" class="hover:text-green-700 transition border-b-2 border-transparent hover:border-green-700">Rólunk</a>
+      <a href="/#about" class="hover:text-green-700 transition border-b-2 border-transparent hover:border-green-700">Über uns</a>
       <a href="/#faq" class="hover:text-green-700 transition border-b-2 border-transparent hover:border-green-700">FAQ</a>
     </nav>
 
     <!-- ✅ CTA Desktop -->
-    <a href="https://shop.biokosar.hu" 
+    <a href="#" 
        class="hidden md:inline-block bg-green-600 text-white px-4 lg:px-5 py-2 rounded-lg font-semibold hover:bg-green-700 shadow-md hover:shadow-lg transition text-sm lg:text-base">
-       Rendelj most
+       Exposé anfordern
     </a>
 
     <!-- ✅ Mobile Burger -->
@@ -45,11 +45,11 @@ import "../styles/global.css";
   <div id="mobileMenu" class="hidden absolute top-full left-0 w-full bg-white shadow-lg border-t border-gray-200 z-50 transform transition-all duration-300 ease-in-out">
     <nav class="flex flex-col items-center py-6 space-y-4 text-gray-700 text-lg font-medium">
       <a href="/" class="hover:text-green-600 transition mobile-link">Home</a>
-      <a href="/#about" class="hover:text-green-600 transition mobile-link">Rólunk</a>
+      <a href="/#about" class="hover:text-green-600 transition mobile-link">Über uns</a>
       <a href="/#faq" class="hover:text-green-600 transition mobile-link">FAQ</a>
-      <a href="https://shop.biokosar.hu" 
+      <a href="#" 
          class="bg-green-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-green-700 transition">
-        Rendelj most
+        Exposé anfordern
       </a>
     </nav>
   </div>
@@ -58,42 +58,44 @@ import "../styles/global.css";
 
   <!-- ✅ Hero -->
   <section class="h-48 flex justify-center items-center text-center bg-gray-50 border-b border-gray-200 mt-20">
-    <h1 class="text-4xl md:text-6xl font-semibold">Jogi információk</h1>
+    <h1 class="text-4xl md:text-6xl font-semibold">Rechtliche Hinweise</h1>
   </section>
 
   <!-- ✅ Content -->
   <main class="flex-grow max-w-4xl mx-auto px-6 py-16 leading-relaxed text-gray-800">
     
-<!-- Impresszum -->
+<!-- Impressum -->
 <section>
-  <h2 class="text-3xl font-semibold mb-4 border-b border-gray-300 pb-2">Impresszum</h2>
+  <h2 class="text-3xl font-semibold mb-4 border-b border-gray-300 pb-2">Impressum</h2>
   <p class="text-lg leading-8 mb-16">
-    <strong>BioKosár Kft.</strong><br>
-    1115 Budapest, Kelenföldi utca 38.<br><br>
-    E-mail: <a href="mailto:info@biokosar.hu" class="text-green-700 hover:underline">info@biokosar.hu</a><br>
-    Tel.: <a href="tel:+3613710112" class="text-green-700 hover:underline">+36 1 371 0112</a><br>
-    Adószám: HU13894331<br>
-    Cégjegyzékszám: 01-09-878687<br>
-    Képviseli: Kövesi Ferenc Ottó<br><br>
+    <strong>ImmoBot Demo GmbH</strong><br>
+    Musterstraße 12, 10115 Berlin<br><br>
+    E-Mail: <a href="mailto:info@immobot.de" class="text-green-700 hover:underline">info@immobot.de</a><br>
+    Tel.: <a href="tel:+49301234567" class="text-green-700 hover:underline">+49 30 123 4567</a><br>
+    Umsatzsteuer-ID: DE123456789<br>
+    Handelsregister: HRB 123456, Amtsgericht Berlin<br>
+    Vertreten durch: Max Mustermann<br><br>
   </p>
 </section>
 
-<!-- Adatvédelem -->
+<!-- Datenschutz -->
 <section>
-  <h2 class="text-3xl font-semibold mb-4 border-b border-gray-300 pb-2">Adatvédelmi tájékoztató</h2>
+  <h2 class="text-3xl font-semibold mb-4 border-b border-gray-300 pb-2">Datenschutzerklärung</h2>
   <p class="text-lg leading-8 mb-16">
-    Az Ön adatait a GDPR előírásainak megfelelően kezeljük. Cookie-kat csak funkcionális célokra használunk.
-    Az Ön hozzájárulása nélkül adatokat nem adunk át harmadik félnek. Önnek joga van bármikor tájékoztatást kérni,
-    valamint kérheti adatainak törlését vagy a hozzájárulás visszavonását.<br><br>
+    Diese Demonstrations-Website behandelt personenbezogene Daten gemäß den Vorgaben der DSGVO.  
+    Cookies werden ausschließlich zu funktionalen Zwecken genutzt.  
+    Eine Weitergabe von Daten an Dritte erfolgt nicht.  
+    Sie haben jederzeit das Recht auf Auskunft, Löschung und Widerruf Ihrer Einwilligung.<br><br>
   </p>
 </section>
 
-<!-- ÁSZF -->
+<!-- AGB -->
 <section>
-  <h2 class="text-3xl font-semibold mb-4 border-b border-gray-300 pb-2">Általános Szerződési Feltételek (ÁSZF)</h2>
+  <h2 class="text-3xl font-semibold mb-4 border-b border-gray-300 pb-2">Allgemeine Geschäftsbedingungen (AGB)</h2>
   <p class="text-lg leading-8 mb-16">
-    ÁSZF-ünk szabályozza a fizetési feltételeket, szállítást, elállási jogot és felelősséget.
-    Kérjük, vegye figyelembe, hogy az online boltunk használatával Ön elfogadja ÁSZF-ünket.<br><br>
+    Diese AGB dienen nur als Beispiel für eine Immobilien-Demo-Seite.  
+    Es werden keine realen Verträge geschlossen.  
+    Inhalte wie Zahlungsbedingungen, Widerrufsrecht oder Haftung sind rein fiktiv und haben keine rechtliche Wirkung.<br><br>
   </p>
 </section>
 
@@ -102,31 +104,31 @@ import "../styles/global.css";
 <footer class="bg-gray-100 border-t border-gray-200 text-gray-600 text-sm">
   <div class="max-w-6xl mx-auto px-8 py-12 grid md:grid-cols-4 gap-8">
     
-    <!-- BioKosár -->
+    <!-- ImmoBot -->
     <div>
-      <h3 class="font-semibold text-gray-800 mb-3">BioKosár</h3>
-      <p>Friss bio termékek közvetlenül a gazdaságból – egyszerű online rendelés.</p>
+      <h3 class="font-semibold text-gray-800 mb-3">ImmoBot</h3>
+      <p>Eine moderne Immobilien-Demoseite – klar strukturiert und jederzeit erweiterbar.</p>
     </div>
     
-    <!-- Jogi információk -->
+    <!-- Rechtliches -->
     <div>
-      <h3 class="font-semibold text-gray-800 mb-3">Jogi információk</h3>
+      <h3 class="font-semibold text-gray-800 mb-3">Rechtliches</h3>
       <ul>
-        <li><a href="/rechtliches" class="hover:text-green-700">Jogi információk</a></li>
+        <li><a href="/rechtliches" class="hover:text-green-700">Rechtliche Hinweise</a></li>
       </ul>
     </div>
     
-    <!-- Kapcsolat -->
+    <!-- Kontakt -->
     <div>
-      <h3 class="font-semibold text-gray-800 mb-3">Kapcsolat</h3>
-      <p>E-mail: <a href="mailto:info@biokosar.hu" class="hover:text-green-700">info@biokosar.hu</a></p>
-      <p>Tel.: +36 30 123 4567</p>
+      <h3 class="font-semibold text-gray-800 mb-3">Kontakt</h3>
+      <p>E-Mail: <a href="mailto:info@immobot.de" class="hover:text-green-700">info@immobot.de</a></p>
+      <p>Tel.: +49 30 123 4567</p>
     </div>
     
   <div>
-  <h3 class="font-semibold text-gray-800 mb-3">Shop</h3>
-  <a href="https://shop.biokosar.hu" class="font-semibold text-gray-800 hover:text-green-700">
-    Online bolt
+  <h3 class="font-semibold text-gray-800 mb-3">Service</h3>
+  <a href="#" class="font-semibold text-gray-800 hover:text-green-700">
+    Immobilien ansehen
   </a>
 </div>
 
@@ -135,7 +137,7 @@ import "../styles/global.css";
   
   <!-- ✅ Bottom Bar -->
   <div class="text-center text-xs text-gray-400 py-4 border-t border-gray-200">
-    © 2025 BioKosár. Minden jog fenntartva.
+    © 2025 ImmoBot. Alle Rechte vorbehalten.
   </div>
 </footer>
 

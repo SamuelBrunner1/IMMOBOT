@@ -3,16 +3,16 @@ import "../styles/global.css";
 import SwiperInit from "../components/SwiperInit.astro";
 ---
 
-<html lang="hu" style="color-scheme: light;">
+<html lang="de" style="color-scheme: light;">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BioKosár – Friss bio termékek közvetlenül a gazdaságból</title>
-  <meta name="description" content="Friss, helyi bio termékek egyszerű online rendelése. Fenntartható, regionális, közvetlenül a gazdaságból." />
+  <title>ImmoBot – Moderne Immobilien-Demo-Website</title>
+  <meta name="description" content="Immobilien und Wohnungen präsentieren – einfache Online-Demo, modernes Design, vorbereitet für Chatbot-Integration." />
 
   <!-- SEO & Social -->
-  <meta property="og:title" content="BioKosár – Frische Bio-Produkte direkt vom Bauernhof" />
-  <meta property="og:description" content="Rendelj friss, helyi bio termékeket kényelmesen online – fenntarthatóan, közvetlenül a gazdáktól." />
+  <meta property="og:title" content="ImmoBot – Immobilien-Demo-Website" />
+  <meta property="og:description" content="Entdecken Sie, wie eine moderne Immobilien-Website aussehen könnte – als Demonstration mit Chatbot-Integration." />
   <meta property="og:image" content="/NAPRA_BILD.jpg" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -29,22 +29,21 @@ import SwiperInit from "../components/SwiperInit.astro";
     
     <!-- ✅ Logo -->
     <a href="#home" class="flex items-center gap-3">
-      <img src="/NAPRA_BILD.jpg" alt="BioKosár Logo" class="h-10 sm:h-12 w-auto object-contain">
-      <span class="text-xl sm:text-2xl font-bold text-gray-900">BioKosár</span>
+      <img src="/NAPRA_BILD.jpg" alt="ImmoBot Logo" class="h-10 sm:h-12 w-auto object-contain">
+      <span class="text-xl sm:text-2xl font-bold text-gray-900">ImmoBot</span>
     </a>
 
     <!-- ✅ Navigation -->
   <nav class="hidden md:flex space-x-6 lg:space-x-8 text-gray-700 text-base lg:text-lg font-medium">
   <a href="#home" class="hover:text-green-700 transition border-b-2 border-transparent hover:border-green-700">Home</a>
-  <a href="#about" class="hover:text-green-700 transition border-b-2 border-transparent hover:border-green-700">Rólunk</a>
+  <a href="#about" class="hover:text-green-700 transition border-b-2 border-transparent hover:border-green-700">Über uns</a>
   <a href="#faq" class="hover:text-green-700 transition border-b-2 border-transparent hover:border-green-700">FAQ</a>
 </nav>
 
-
     <!-- ✅ CTA Desktop -->
-    <a href="https://shop.biokosar.hu" 
+    <a href="#" 
        class="hidden md:inline-block bg-green-600 text-white px-4 lg:px-5 py-2 rounded-lg font-semibold hover:bg-green-700 shadow-md hover:shadow-lg transition text-sm lg:text-base">
-       Rendelj most
+       Exposé anfordern
     </a>
 
     <!-- ✅ Mobile Burger -->
@@ -59,11 +58,12 @@ import SwiperInit from "../components/SwiperInit.astro";
   <div id="mobileMenu" class="hidden absolute top-full left-0 w-full bg-white shadow-lg border-t border-gray-200 z-50 transform transition-all duration-300 ease-in-out">
     <nav class="flex flex-col items-center py-6 space-y-4 text-gray-700 text-lg font-medium">
       <a href="#home" class="hover:text-green-600 transition mobile-link">Home</a>
-      <a href="#about" class="hover:text-green-600 transition mobile-link">Rólunk</a>
+      <a href="#about" class="hover:text-green-600 transition mobile-link">Über uns</a>
       <a href="#faq" class="hover:text-green-600 transition mobile-link">FAQ</a>
-      <a href="https://shop.biokosar.hu" 
+      <a href="#" 
          class="bg-green-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-green-700 transition">
-        Rendelj most      </a>
+        Exposé anfordern
+      </a>
     </nav>
   </div>
 </header>
@@ -71,54 +71,53 @@ import SwiperInit from "../components/SwiperInit.astro";
 
 <div id="menuOverlay" class="hidden fixed inset-0 bg-black bg-opacity-40 z-40"></div>
 
-<!-- ✅ IMPROVED HERO -->
+<!-- ✅ HERO -->
 <section id="home" class="relative h-[70vh] md:h-screen flex flex-col justify-center items-center text-center bg-gradient-to-br from-green-100 via-white to-green-50 overflow-hidden">
   
-  <!-- Dekorative Elemente (animierte Kreise) -->
+  <!-- Deko -->
   <div class="absolute top-[-50px] left-[-50px] w-64 h-64 bg-green-200 rounded-full opacity-30 animate-pulse"></div>
   <div class="absolute bottom-[-60px] right-[-60px] w-80 h-80 bg-green-300 rounded-full opacity-20 animate-pulse"></div>
   
   <div class="relative max-w-3xl px-6 z-10">
     <!-- Headline -->
     <h1 class="text-4xl sm:text-5xl md:text-7xl font-extrabold mb-6 text-gray-900 leading-tight">
-      Friss bio termékek. <br class="hidden sm:block"/> Közvetlenül a gazdaságból.
+      Moderne Immobilien. <br class="hidden sm:block"/> Transparent & digital präsentiert.
     </h1>
     
     <!-- Subtext -->
     <p class="text-lg sm:text-xl md:text-2xl mb-8 font-light text-gray-700 leading-relaxed">
-Természetes ízek – friss, minőségi, bio.    </p>
+Ihr neues Zuhause – klar strukturiert, modern dargestellt und jederzeit online verfügbar.
+    </p>
     
     <!-- CTA Button -->
-    <a href="https://shop.biokosar.hu" 
+    <a href="#" 
        class="inline-block bg-green-600 text-white px-8 py-4 rounded-xl text-lg font-semibold shadow-lg hover:shadow-xl hover:bg-green-700 transition-all duration-300">
-      🛒 Online bolt
+      🔑 Immobilien ansehen
     </a>
   </div>
 </section>
 
 
-
 <!-- ✅ Über uns -->
 <section id="about" class="relative py-12 md:py-20 px-6 bg-[#F6FAF7]" data-animate>
   <div class="relative max-w-4xl mx-auto text-center bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg p-8 md:p-10">
-    <h2 class="text-3xl md:text-4xl font-bold mb-4">Rólunk</h2>
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">Über uns</h2>
     <p class="text-base md:text-lg leading-7 text-gray-700">
-A BioKosár több mint egy egyszerű webshop, ez a tudatos, egészséges életmód otthona.
-Friss, növényi alapú bio élelmiszereket kínálunk, amelyeket megbízható, tanúsított termelőktől szerzünk be. 
-Termékeink között megtalálhatók a zöldségek, gyümölcsök, gabonák, magvak, bio pékáruk és számos finomság,
- mind állati eredetű összetevők nélkül.
+ImmoBot ist eine moderne Demonstrations-Plattform für Immobilien-Websites.  
+Wir zeigen, wie Wohnungen und Häuser digital, klar strukturiert und ansprechend präsentiert werden können.  
 
-Célunk, hogy megkönnyítsük a fenntartható, etikus és egészséges táplálkozást, mindezt egyszerűen, kényelmesen és megbízhatóan. 
-Minden rendeléseddel a helyi termelőket támogatod, és egy zöldebb jövőért teszel.
+Die Seite dient ausschließlich als Beispiel: von der übersichtlichen Startseite bis hin zum später integrierten Chatbot für Immobilienanfragen.  
+So können Kunden sofort erleben, wie eine professionelle Immobilienpräsenz online aussehen könnte.  
     </p>
   </div>
 </section>
 
-<!-- ✅ Kundenbewertungen -->
+
+<!-- ✅ Kundenstimmen -->
 <section id="shop" class="bg-[#F1F8F4] py-12 md:py-16 mt-12 md:mt-16 rounded-t-3xl" data-animate>
   <div class="max-w-6xl mx-auto px-6">
     <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 md:mb-10">
-      Mit mondanak a vásárlóink
+      Das sagen unsere Interessenten
     </h2>
 
     <!-- ✅ Scroll-Snap Container -->
@@ -127,22 +126,22 @@ Minden rendeléseddel a helyi termelőket támogatod, és egy zöldebb jövőér
      <!-- Slide 1 -->
 <div class="scroll-snap-slide">
   <div class="flex justify-center mb-2 text-green-600">⭐⭐⭐⭐⭐</div>
-  <p class="text-lg italic mb-4">„Mindig friss és ízletes termékek! Nagyon örülök, hogy rátaláltam a BioKosárra.”</p>
-  <span class="block font-semibold">– Gábor Kovács</span>
+  <p class="text-lg italic mb-4">„Sehr moderne Darstellung – ich konnte mir sofort einen guten Eindruck von der Wohnung verschaffen.“</p>
+  <span class="block font-semibold">– Markus H.</span>
 </div>
 
 <!-- Slide 2 -->
 <div class="scroll-snap-slide">
   <div class="flex justify-center mb-2 text-green-600">⭐⭐⭐⭐⭐</div>
-  <p class="text-lg italic mb-4">„Gyors szállítás, szuper minőség. Már többször rendeltem, és mindig minden rendben volt.”</p>
-  <span class="block font-semibold">– Eszter Nagy</span>
+  <p class="text-lg italic mb-4">„Schnelle Rückmeldung und übersichtliche Informationen – genau so stellt man sich eine Immobilienseite vor.“</p>
+  <span class="block font-semibold">– Julia K.</span>
 </div>
 
 <!-- Slide 3 -->
 <div class="scroll-snap-slide">
   <div class="flex justify-center mb-2 text-green-600">⭐⭐⭐⭐⭐</div>
-  <p class="text-lg italic mb-4">„Nagyon jó élmény! Finom, megbízható termékek, kedves ügyfélszolgálat.”</p>
-  <span class="block font-semibold">– László Tóth</span>
+  <p class="text-lg italic mb-4">„Sehr angenehme Demo! Alles wirkt professionell und realistisch.“</p>
+  <span class="block font-semibold">– Thomas L.</span>
 </div>
 
     </div>
@@ -151,43 +150,45 @@ Minden rendeléseddel a helyi termelőket támogatod, és egy zöldebb jövőér
 
 
 
-
 <!-- ✅ FAQ -->
 <section id="faq" class="bg-[#F6FAF7] py-12 md:py-20 px-6" data-animate>
   <div class="max-w-3xl mx-auto">
-    <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">Gyakori kérdések</h2>
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">Häufige Fragen</h2>
     <div class="bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg divide-y divide-gray-200 border border-gray-200">
       
-      <!-- ✅ Kérdés 1 -->
+      <!-- ✅ Frage 1 -->
       <details class="group p-6">
         <summary class="flex justify-between items-center cursor-pointer text-lg font-medium">
-          <span>Milyen gyorsan szállítjátok ki a rendelést?</span>
+          <span>Wie schnell kann eine Besichtigung vereinbart werden?</span>
           <span class="transition-transform group-open:rotate-180 text-gray-500">⌄</span>
         </summary>
         <p class="mt-4 text-gray-600 leading-relaxed">
-          A rendeléseket általában 2–3 munkanapon belül kiszállítjuk. Budapesten saját futárszolgálattal, vidékre futárszolgálaton keresztül juttatjuk el a csomagokat.
+          In der Regel können Besichtigungstermine innerhalb von 2–3 Werktagen vereinbart werden.  
+          Eine genaue Abstimmung erfolgt direkt über den zuständigen Ansprechpartner.
         </p>
       </details>
       
-      <!-- ✅ Kérdés 2 -->
+      <!-- ✅ Frage 2 -->
       <details class="group p-6">
         <summary class="flex justify-between items-center cursor-pointer text-lg font-medium">
-          <span>Minden termék valóban bio?</span>
+          <span>Sind die Immobilien real oder nur zu Demonstrationszwecken?</span>
           <span class="transition-transform group-open:rotate-180 text-gray-500">⌄</span>
         </summary>
         <p class="mt-4 text-gray-600 leading-relaxed">
-          Igen, minden termékünk ellenőrzött ökológiai gazdaságból származik, és hús- vagy tojásmentes.
+          Diese Website dient ausschließlich als Demonstration.  
+          Alle dargestellten Immobilien, Bilder und Informationen sind fiktiv und zu Präsentationszwecken erstellt.
         </p>
       </details>
       
-      <!-- ✅ Kérdés 3 -->
+      <!-- ✅ Frage 3 -->
       <details class="group p-6">
         <summary class="flex justify-between items-center cursor-pointer text-lg font-medium">
-          <span>Van személyes átvételi lehetőség?</span>
+          <span>Kann später ein Chatbot für Anfragen integriert werden?</span>
           <span class="transition-transform group-open:rotate-180 text-gray-500">⌄</span>
         </summary>
         <p class="mt-4 text-gray-600 leading-relaxed">
-          Igen, személyes átvétel lehetséges a boltunkban (Budapest, Szabolcska Mihály utca 5.), ahol a rendelést akár két munkanapon belül átveheted.
+          Ja, die Seite ist bereits dafür vorbereitet.  
+          Ein Chatbot kann integriert werden, um Anfragen zu Immobilien, Besichtigungen und Exposés automatisiert zu beantworten.
         </p>
       </details>     
     </div>
@@ -196,39 +197,38 @@ Minden rendeléseddel a helyi termelőket támogatod, és egy zöldebb jövőér
 
 
 
-
 <!-- ✅ Sticky CTA -->
-<a href="https://shop.biokosar.hu" class="sticky-cta">Rendelj most</a>
+<a href="#" class="sticky-cta">Exposé anfordern</a>
 
 <!-- ✅ Footer -->
 <footer class="bg-gray-100 border-t border-gray-200 text-gray-600 text-sm">
   <div class="max-w-6xl mx-auto px-8 py-12 grid md:grid-cols-4 gap-8">
     
-    <!-- BioKosár -->
+    <!-- ImmoBot -->
     <div>
-      <h3 class="font-semibold text-gray-800 mb-3">BioKosár</h3>
-      <p>Friss bio termékek közvetlenül a gazdaságból – egyszerű online rendelés.</p>
+      <h3 class="font-semibold text-gray-800 mb-3">ImmoBot</h3>
+      <p>Eine moderne Immobilien-Demoseite – klar strukturiert und jederzeit erweiterbar.</p>
     </div>
     
-    <!-- Jogi információk -->
+    <!-- Rechtliches -->
     <div>
-      <h3 class="font-semibold text-gray-800 mb-3">Jogi információk</h3>
+      <h3 class="font-semibold text-gray-800 mb-3">Rechtliches</h3>
       <ul>
-        <li><a href="/rechtliches" class="hover:text-green-700">Jogi információk</a></li>
+        <li><a href="/rechtliches" class="hover:text-green-700">Impressum & Datenschutz</a></li>
       </ul>
     </div>
     
-    <!-- Kapcsolat -->
+    <!-- Kontakt -->
     <div>
-      <h3 class="font-semibold text-gray-800 mb-3">Kapcsolat</h3>
-      <p>E-mail: <a href="mailto:info@biokosar.hu" class="hover:text-green-700">info@biokosar.hu</a></p>
-      <p>Tel.: +36 30 123 4567</p>
+      <h3 class="font-semibold text-gray-800 mb-3">Kontakt</h3>
+      <p>E-Mail: <a href="mailto:info@immobot.de" class="hover:text-green-700">info@immobot.de</a></p>
+      <p>Tel.: +49 30 123 4567</p>
     </div>
     
   <div>
-  <h3 class="font-semibold text-gray-800 mb-3">Shop</h3>
-  <a href="https://shop.biokosar.hu" class="font-semibold text-gray-800 hover:text-green-700">
-    Online bolt
+  <h3 class="font-semibold text-gray-800 mb-3">Service</h3>
+  <a href="#" class="font-semibold text-gray-800 hover:text-green-700">
+    Immobilien ansehen
   </a>
 </div>
 
@@ -237,9 +237,10 @@ Minden rendeléseddel a helyi termelőket támogatod, és egy zöldebb jövőér
   
   <!-- ✅ Bottom Bar -->
   <div class="text-center text-xs text-gray-400 py-4 border-t border-gray-200">
-    © 2025 BioKosár. Minden jog fenntartva.
+    © 2025 ImmoBot. Alle Rechte vorbehalten.
   </div>
 </footer>
+
 
 
 

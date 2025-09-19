@@ -1,0 +1,113 @@
+/* ✅ TailwindCSS Import */
+@import "tailwindcss";
+
+/* ✅ Base Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+  background-color: #ffffff; /* Immer weiß */
+  color: #1f2937; /* Neutral Grau */
+  margin: 0;
+  padding: 0;
+}
+
+/* ✅ Typografie */
+h1, h2 {
+  letter-spacing: -0.02em;
+}
+
+/* ✅ Scroll Animation */
+[data-animate] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out;
+}
+[data-animate].visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ✅ Hero Overlay */
+.hero-overlay {
+  background: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+@media (max-width: 640px) {
+  .hero-overlay {
+    background: rgba(255, 255, 255, 0.95);
+  }
+}
+
+/* ✅ Hero Text Box */
+.hero-text {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+  display: inline-block;
+  z-index: 2;
+}
+@media (max-width: 640px) {
+  .hero-text {
+    background: #fff; /* ✅ Voll weiß auf Mobile */
+  }
+}
+
+/* ✅ Sticky CTA */
+.sticky-cta {
+  position: fixed;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #16a34a;
+  color: white;
+  font-weight: 600;
+  padding: 14px 24px;
+  border-radius: 9999px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  z-index: 10000;
+  transition: all 0.3s ease;
+}
+.sticky-cta:hover {
+  background-color: #15803d;
+  transform: translateX(-50%) scale(1.05);
+}
+
+/* ✅ Mobile Menu Overlay */
+#menuOverlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 40;
+}
+#menuOverlay.active {
+  display: block;
+}
+
+/* ✅ Scroll Snap Slider */
+.scroll-snap-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  padding: 16px;
+  scroll-behavior: smooth;
+}
+.scroll-snap-slide {
+  flex: 0 0 80%;
+  scroll-snap-align: center;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .scroll-snap-slide {
+    flex: 0 0 30%;
+  }
+}

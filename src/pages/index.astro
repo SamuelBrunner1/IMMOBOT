@@ -41,10 +41,38 @@ import SwiperInit from "../components/SwiperInit.astro";
 </nav>
 
     <!-- ✅ CTA Desktop -->
-    <a href="#" 
-       class="hidden md:inline-block bg-blue-600 text-white px-4 lg:px-5 py-2 rounded-lg font-semibold hover:bg-blue-700 shadow-md hover:shadow-lg transition text-sm lg:text-base">
-       Exposé anfordern
-    </a>
+  <a href="#"
+   onclick="window.chatbase && window.chatbase('open')"
+   class="hidden md:inline-block bg-blue-600 text-white px-4 lg:px-5 py-2 rounded-lg font-semibold hover:bg-blue-700 shadow-md hover:shadow-lg transition text-sm lg:text-base">
+   💬 ImmoBot starten
+</a>
+
+<script>
+(function(){
+  if(!window.chatbase || window.chatbase("getState")!=="initialized"){
+    window.chatbase=(...arguments)=>{
+      if(!window.chatbase.q){window.chatbase.q=[]}
+      window.chatbase.q.push(arguments)
+    };
+    window.chatbase=new Proxy(window.chatbase,{
+      get(target,prop){
+        if(prop==="q"){return target.q}
+        return(...args)=>target(prop,...args)
+      }
+    })
+  }
+  const onLoad=function(){
+    const script=document.createElement("script");
+    script.src="https://www.chatbase.co/embed.min.js";
+    script.id="3YNF_5MxuzhyMN4QpmdLI"; // <-- deine Agent-ID bleibt hier stehen
+    script.domain="www.chatbase.co";
+    document.body.appendChild(script)
+  };
+  if(document.readyState==="complete"){onLoad()}
+  else{window.addEventListener("load",onLoad)}
+})();
+</script>
+
 
     <!-- ✅ Mobile Burger -->
     <button id="burgerBtn" class="md:hidden p-2 text-gray-700 hover:text-blue-600 focus:outline-none">

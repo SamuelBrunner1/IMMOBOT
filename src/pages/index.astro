@@ -49,27 +49,47 @@ import SwiperInit from "../components/SwiperInit.astro";
 
 <script>
 (function(){
+  const CHATBASE_ID = "3YNF_5MxuzhyMN4QpmdLI"; // <-- deine Agent-ID hier
+  const MAX_MESSAGES = 5; // Limit der Nachrichten pro Session
+  let messageCount = 0;
+
+  // Fallback-Queue, falls Chatbase noch nicht geladen ist
   if (!window.chatbase || window.chatbase("getState") !== "initialized") {
-    // temporäre Queue, falls Chatbase noch nicht geladen ist
-    window.chatbase = (...args) => {
-      if (!window.chatbase.q) { window.chatbase.q = []; }
-      window.chatbase.q.push(args);
-    };
-    window.chatbase = new Proxy(window.chatbase, {
+    const queue = [];
+    const proxyHandler = {
       get(target, prop) {
-        if (prop === "q") { return target.q; }
+        if (prop === "q") return queue;
         return (...args) => target(prop, ...args);
       }
-    });
+    };
+
+    const chatbaseFunc = (...args) => {
+      // Nachrichten zählen
+      if (args[0] === "sendMessage") {
+        messageCount++;
+        if (messageCount > MAX_MESSAGES) {
+          alert("❌ Limit erreicht! Dies ist nur eine Demo-Version.\n\nBitte kontaktieren Sie uns unter immobot.team@gmail.com.");
+          return;
+        }
+      }
+      queue.push(args);
+    };
+
+    window.chatbase = new Proxy(chatbaseFunc, proxyHandler);
   }
 
+  // Lädt das Chatbase Script
   const onLoad = function() {
-    const script = document.createElement("script");
-    script.src = "https://www.chatbase.co/embed.min.js";
-    script.id = "3YNF_5MxuzhyMN4QpmdLI"; // <-- deine Agent-ID bleibt hier stehen
-    document.body.appendChild(script);
+    if (!document.getElementById(CHATBASE_ID)) {
+      const script = document.createElement("script");
+      script.src = "https://www.chatbase.co/embed.min.js";
+      script.id = CHATBASE_ID;
+      script.async = true;
+      document.body.appendChild(script);
+    }
   };
 
+  // Direkt laden, wenn DOM fertig ist
   if (document.readyState === "complete") { 
     onLoad(); 
   } else { 

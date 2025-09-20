@@ -113,10 +113,12 @@ import SwiperInit from "../components/SwiperInit.astro";
       <a href="#home" class="hover:text-blue-600 transition mobile-link">Home</a>
       <a href="#about" class="hover:text-blue-600 transition mobile-link">Über uns</a>
       <a href="#faq" class="hover:text-blue-600 transition mobile-link">FAQ</a>
-      <a href="#" 
-         class="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition">
-        Exposé anfordern
-      </a>
+     <a href="#"
+   onclick="window.chatbase && window.chatbase('open')"
+   class="inline-block bg-blue-600 text-white px-8 py-4 rounded-xl text-lg font-semibold shadow-lg hover:shadow-xl hover:bg-blue-700 transition-all duration-300">
+   💬 ImmoBot starten
+</a>
+
     </nav>
   </div>
 </header>
@@ -280,8 +282,8 @@ Der Fokus liegt nicht auf der Website selbst, sondern auf der Qualität und dem 
     <!-- Kontakt -->
     <div>
       <h3 class="font-semibold text-gray-800 mb-3">Kontakt</h3>
-      <p>E-Mail: <a href="mailto:info@immobot.de" class="hover:text-green-700">info@immobot.de</a></p>
-      <p>Tel.: +49 30 123 4567</p>
+      <p>E-Mail: <a href="mailto:immobot.team@gmail.com" class="hover:text-green-700">immobot.team@gmail.com</a></p>
+
     </div>
     
   <div>
